@@ -112,6 +112,7 @@
   autocrlf = false
   editor = vim
 	excludesfile = /Users/kenny/.yadr/git/gitignore
+	quotepath = false
 [advice]
   statusHints = false
 [diff]
@@ -132,5 +133,7 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = Kenny_김익수
+	name = Kenny
 	email = kenny@podotree.com
+[commit]
+	template = /Users/kenny/.stCommitMsg

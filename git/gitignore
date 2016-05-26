@@ -47,3 +47,9 @@ Session.vim
 # IntelliJ
 .idea/
 *.iml
+
+.vagrant/
+
+# elastic search
+KakaoSlideWeb/SlideWeb/vendor/elasticsearch/elasticsearch-1.5.0/data/
+컴파일환경및설치.txt
