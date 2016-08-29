@@ -1,5 +1,5 @@
 # User env
-export MYSQL_HOME=/usr/local/mysql
+export MYSQL_HOME=/usr/local/Cellar/mysql56/5.6.32
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PATH:$MYSQL_HOME/bin:$PYENV_ROOT/bin:.
 
@@ -9,6 +9,8 @@ alias vim='/usr/local/bin/vim'
 alias mit-scheme="/Applications/MIT-Scheme.app/Contents/Resources/mit-scheme"
 
 #eval $(docker-machine env)
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv init -)"
 
 function setjdk() {
 if [ $# -ne 0 ]; then
