@@ -9,8 +9,8 @@ alias vim='/usr/local/bin/vim'
 alias mit-scheme="/Applications/MIT-Scheme.app/Contents/Resources/mit-scheme"
 
 #eval $(docker-machine env)
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv init -)"
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 function setjdk() {
 if [ $# -ne 0 ]; then
