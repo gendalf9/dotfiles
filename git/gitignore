@@ -163,3 +163,4 @@ KakaoSlideWeb/SlideWeb/src/main/scripts/database/dumps_backup/v4.0.9_user_db_upd
 KakaoSlideWeb/SlideWeb/src/main/scripts/database/dumps_backup/v4.1.0_content_db_update.sql
 KakaoSlideWeb/SlideWeb/src/main/scripts/database/dumps_backup/v4.1.0_user_db_update.sql
 KakaoSlideWeb/SlideWeb/src/main/scripts/database/dumps_backup/v4.1.1_user_db_update.sql
+*.log
