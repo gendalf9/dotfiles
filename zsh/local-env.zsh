@@ -5,7 +5,7 @@ export PATH=$PATH:$MYSQL_HOME/bin:$PYENV_ROOT/bin:.
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 alias vim='/usr/local/bin/vim'
-
+alias cat='ccat'
 alias mit-scheme="/Applications/MIT-Scheme.app/Contents/Resources/mit-scheme"
 
 #eval $(docker-machine env)
@@ -25,4 +25,4 @@ if [ $# -ne 0 ]; then
 function removeFromPath() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
 }
-setjdk 1.7
+setjdk 1.8
