@@ -22,7 +22,26 @@ if [ $# -ne 0 ]; then
   export PATH=$JAVA_HOME/bin:$PATH
   fi
 }
+
+#export JAVA_6_HOME=`/usr/libexec/java_home -v 1.6`
+export JAVA_7_HOME=`/usr/libexec/java_home -v 1.7`
+export JAVA_8_HOME=`/usr/libexec/java_home -v 1.8`
+
 function removeFromPath() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
 }
+
+function dgscpup() {
+  scp -i ~/.ssh/id_rsa_dGate_PC $1 dg@dg.daumkakao.io:deploy@$2
+}
+
+function dgscpdown() {
+  scp -i ~/.ssh/id_rsa_dGate_PC dg@dg.daumkakao.io:deploy@$1 $2
+}
+
+
+function dgssh() {
+  ssh -t dg "$1"
+}
+
 setjdk 1.8
