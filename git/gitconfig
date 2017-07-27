@@ -137,3 +137,5 @@
 	email = kenny@podotree.com
 [commit]
 	template = /Users/kenny/.stCommitMsg
+[sequence]
+	editor = rebase-editor
