@@ -24,7 +24,7 @@ if [ $# -ne 0 ]; then
 }
 
 #export JAVA_6_HOME=`/usr/libexec/java_home -v 1.6`
-export JAVA_7_HOME=`/usr/libexec/java_home -v 1.7`
+#export JAVA_7_HOME=`/usr/libexec/java_home -v 1.7`
 export JAVA_8_HOME=`/usr/libexec/java_home -v 1.8`
 
 function removeFromPath() {
