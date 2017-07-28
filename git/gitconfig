@@ -111,7 +111,7 @@
 [core]
   autocrlf = false
   editor = vim
-	excludesfile = /Users/kenny/.yadr/git/gitignore
+	excludesfile = /Users/gendalf9/.yadr/git/gitignore
 	quotepath = false
 [advice]
   statusHints = false
@@ -133,9 +133,11 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = Kenny
+	name = kenny
 	email = kenny@podotree.com
 [commit]
-	template = /Users/kenny/.stCommitMsg
+	template = /Users/gendalf9/.stCommitMsg
 [sequence]
 	editor = rebase-editor
+[uesr]
+	email = kenny@podotree.com
