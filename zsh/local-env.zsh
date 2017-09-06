@@ -7,7 +7,6 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 alias vim='/usr/local/bin/vim'
 alias cat='ccat'
 alias mit-scheme="/Applications/MIT-Scheme.app/Contents/Resources/mit-scheme"
-
 #eval $(docker-machine env)
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
@@ -42,6 +41,10 @@ function dgscpdown() {
 
 function dgssh() {
   ssh -t dg "$1"
+}
+
+function dgsshvpn() {
+  ssh -t dgvpn "$1"
 }
 
 setjdk 1.8
