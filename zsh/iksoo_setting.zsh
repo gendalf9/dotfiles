@@ -2,7 +2,7 @@ alias sshkr='luit -encoding eucKR +osl -- ssh'
 alias telkr='luit -encoding eucKR +osl -- telnet'''''
 
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+#eval "$(pyenv virtualenv-init -)"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
