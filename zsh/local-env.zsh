@@ -48,3 +48,5 @@ function dgsshvpn() {
 }
 
 setjdk 1.8
+
+source ~/.yadr/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
