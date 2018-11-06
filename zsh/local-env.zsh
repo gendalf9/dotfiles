@@ -47,6 +47,16 @@ function dgsshvpn() {
   ssh -t dgvpn "$1"
 }
 
+function rmrbranch() {
+  if [ -z "$1" ]
+    then
+     echo "No argument supplied"
+      exit 1
+  fi
+  git branch -r | grep '$1'|sed -e 's/origin\///g'|xargs git push -d origin
+  git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done
+}
+
 setjdk 1.8
 
 source ~/.yadr/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

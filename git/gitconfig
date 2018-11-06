@@ -133,8 +133,8 @@
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = Kenny Kim
-	email = kenny@podotree.com
+	name = Kenny
+	email = kenny@kakaopage.com
 [commit]
 	template = /Users/gendalf9/.stCommitMsg
 [sequence]
